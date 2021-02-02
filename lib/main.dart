@@ -12,17 +12,18 @@ class MyApp extends StatelessWidget {
        title: 'Text widget',
        home: Scaffold(
            body:Center(
-               child:Text(
-                   'Hello World,good bye hello hikaru',
-                   textAlign: TextAlign.left,
-                   maxLines: 1,
-                   style: TextStyle(
-                       fontSize: 25.0,
-                       color: Color.fromARGB(255,255,150,150),
-                       decoration: TextDecoration.underline,
-                       decorationStyle: TextDecorationStyle.solid,
-                       )
-                   ),
+               child: Container(
+                   child: new Text(
+                       'Hello Hikaru',
+                       style: TextStyle(
+                           fontSize: 40.0
+                           )
+                       ),
+                   alignment:Alignment.center,
+                   width:500.0,
+                   height:400.0,
+                   color: Colors.lightBlue,
+                   )
                )
            )
     );
