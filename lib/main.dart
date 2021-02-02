@@ -14,23 +14,38 @@ class MyApp extends StatelessWidget {
             appBar:new AppBar(
                 title:new Text('ListView')
             ),
-            body:new ListView(
-                children:<Widget>[
-                  new Image.network(
-                      'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg'
-                  ),
+            body:new Row(
+                children: <Widget>[
+                  Expanded(
+                      child: new RaisedButton(
+                          onPressed:() {
 
-                  new Image.network(
-                      'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg'
+                          },
+                          color:Colors.redAccent,
+                          child:new Text('红色按钮'),
+                      ),
                   ),
-                  new Image.network(
-                      'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg'
+                  Expanded(
+                      child: new RaisedButton(
+                          onPressed:() {
+
+                          },
+                          color:Colors.orangeAccent,
+                          child:new Text('黄色按钮'),
+                      ),
                   ),
-                  new Image.network(
-                      'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg'
-                  ),
+                  Expanded(
+                     child:  new RaisedButton(
+                          onPressed:() {
+
+                          },
+                          color:Colors.pinkAccent,
+                          child:new Text('粉色按钮'),
+                      )),
+                      
                 ]
-            )
+                )
+            
         )
             );
   }
