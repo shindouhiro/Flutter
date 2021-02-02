@@ -11,20 +11,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
        title: 'Text widget',
        home: Scaffold(
-           body:Center(
-               child:Container(
-                   child:new Image.network(
-                       'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg',
-                       scale:1.0,
-                       // color: Colors.greenAccent,
-                       colorBlendMode:BlendMode.darken,
-                       // fit:BoxFit.cover,
-                       repeat: ImageRepeat.repeat,
-                       ),
-                   width:300.0,
-                   height:200.0,
-                   color: Colors.lightBlue,
-                   )
+           appBar:new AppBar(
+               title:new Text('ListView')
+               ),
+           body:new ListView(
+               children:<Widget>[
+                 new ListTile(
+                     leading:new Icon(Icons.access_time),
+                     title: new Text('access_time'),
+                     ),
+                 new ListTile(
+                     leading:new Icon(Icons.access_time),
+                     title: new Text('access_time'),
+                     ),
+                 new ListTile(
+                     leading:new Icon(Icons.access_time),
+                     title: new Text('access_time'),
+                     ),
+                 new ListTile(
+                     leading:new Icon(Icons.access_time),
+                     title: new Text('access_time'),
+                     ),
+               ]
                )
            )
     );
