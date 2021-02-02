@@ -12,25 +12,19 @@ class MyApp extends StatelessWidget {
        title: 'Text widget',
        home: Scaffold(
            body:Center(
-               child: Container(
-                   child: new Text(
-                       'Hello Hikaru',
-                       style: TextStyle(
-                           fontSize: 40.0
-                           )
+               child:Container(
+                   child:new Image.network(
+                       'https://upload.jianshu.io/users/upload_avatars/1425759/06eb68e0-85cd-42b5-b6bc-14120399af41.jpg',
+                       scale:1.0,
+                       // color: Colors.greenAccent,
+                       colorBlendMode:BlendMode.darken,
+                       // fit:BoxFit.cover,
+                       repeat: ImageRepeat.repeat,
                        ),
-                   alignment:Alignment.topLeft,
-                   width:500.0,
-                   height:400.0,
-                   padding: const EdgeInsets.fromLTRB(10.0,30.0,0.0,0.0),
-                   margin: const EdgeInsets.all(40.0),
-                   decoration:new BoxDecoration(
-                       gradient:const LinearGradient(
-                           colors: [Colors.lightBlue,Colors.greenAccent,Colors.purple]
-                           ),
-                       border: Border.all(width: 2.0,color: Colors.red)
-                       )
-                   ),
+                   width:300.0,
+                   height:200.0,
+                   color: Colors.lightBlue,
+                   )
                )
            )
     );
