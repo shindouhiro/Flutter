@@ -14,35 +14,18 @@ class MyApp extends StatelessWidget {
             appBar:new AppBar(
                 title:new Text('ListView')
             ),
-            body:new Row(
+            body:new Column(
+                mainAxisAlignment:MainAxisAlignment.center,
                 children: <Widget>[
-                  Expanded(
-                      child: new RaisedButton(
-                          onPressed:() {
-
-                          },
-                          color:Colors.redAccent,
-                          child:new Text('红色按钮'),
-                      ),
+                  Center(
+                      child: Text('Hello Hikaru') 
                   ),
                   Expanded(
-                      child: new RaisedButton(
-                          onPressed:() {
-
-                          },
-                          color:Colors.orangeAccent,
-                          child:new Text('黄色按钮'),
-                      ),
+                      child: Text('Hello Hikaru') 
                   ),
-                  Expanded(
-                     child:  new RaisedButton(
-                          onPressed:() {
-
-                          },
-                          color:Colors.pinkAccent,
-                          child:new Text('粉色按钮'),
-                      )),
-                      
+                  Center(
+                      child: Text('Hello Hikaru') 
+                  ),
                 ]
                 )
             
